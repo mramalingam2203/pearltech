@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PearlTech Consulting</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Courier New", monospace;
+            background-color: #333;
+            color: #f8f8f8;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #000;
+            color: #f8f8f8;
+            font-size: 2rem;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .service-block {
+            margin: 20px 0;
+            padding: 40px 20px;
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            color: #ddd;
+        }
+
+        .service-block h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .service-block p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .service-block a {
+            color: #ddd;
+            text-decoration: underline;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .service-block a:hover {
+            color: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #111;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #000;
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        /* Background Images with Inverted Colors */
+        .ai-block {
+            background-image: url('./img/ai.jpg');
+        }
+
+        .blockchain-block {
+            background-image: url('./img/blockchain.jpg');
+        }
+
+        .ecommerce-block {
+            background-image: url('./img/ecom.jpg');
+        }
+
+        /* Dark overlay for text readability */
+        .service-block::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .service-block * {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>PearlTech Consulting</header>
+
+    <section>
+        <h1>Welcome to PearlTech Consulting</h1>
+        <p>We specialize in providing innovative solutions in AI, Blockchain, and E-commerce.  
+           Explore our portfolio and get in touch to elevate your business.</p>
+
+        <!-- AI Consulting Block -->
+        <div class="service-block ai-block">
+            <h2>AI</h2>
+            <p>We offer advanced AI-driven solutions, including machine learning models, natural language processing, and computer vision technologies.</p>
+        </div>
+
+        <!-- Blockchain Consulting Block -->
+        <div class="service-block blockchain-block">
+            <h2>Blockchain</h2>
+            <p>Our expertise in blockchain helps businesses build secure, decentralized solutions, including smart contracts and dApps.</p>
+        </div>
+
+        <!-- E-commerce Consulting Block -->
+        <div class="service-block ecommerce-block">
+            <h2>E-commerce</h2>
+            <p>We provide comprehensive e-commerce solutions, including platform development, optimization, and scaling strategies.</p>
+        </div>
+
+        <a href="mailto:contact@pearltech.com" class="btn">Contact Us</a>
+    </section>
+
+    <footer>
+        &copy; 2025 PearlTech Consulting. All rights reserved. | Email: contact@pearltech.com | Phone: +123 456 7890
+    </footer>
+
+</body>
+</html>
+
